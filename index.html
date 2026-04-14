@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan Cheboiwo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            background: #fafafa;
+        }
+
+        header { margin-bottom: 1.5rem; }
+        header h1 { font-size: 2rem; letter-spacing: 0.02em; }
+        header p { color: #555; margin-top: 0.25rem; }
+
+        nav {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        nav a {
+            color: #2c2c2c;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1px;
+        }
+        nav a:hover { border-bottom-color: #2c2c2c; }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 2rem 0;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            display: inline;
+        }
+
+        section#about p {
+            max-width: 60ch;
+        }
+
+        details summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::before {
+            content: '\25B6';
+            font-size: 0.65rem;
+            transition: transform 0.2s;
+            color: #888;
+        }
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+        details > :not(summary) {
+            margin-top: 1rem;
+        }
+
+        article {
+            margin-bottom: 1.75rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd;
+        }
+        article h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.15rem;
+        }
+        article h3 small {
+            font-weight: normal;
+            color: #777;
+        }
+        article > p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        ul, ol {
+            padding-left: 1.25rem;
+            margin-top: 0.25rem;
+        }
+        li {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        a { color: #1a5276; }
+        a:hover { color: #0e3a5c; }
+
+        footer {
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Allan Cheboiwo</h1>
+        <p>Full-Stack Developer &amp; Cloud Engineer | <a href="mailto:chebowioallan@gmail.com">chebowioallan@gmail.com</a></p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#goals">Goals</a> |
+        <a href="#certifications">Certifications</a> |
+        <a href="#experience">Experience</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#media">Media</a>
+    </nav>
+
+    <hr>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hey, I'm Allan. I recently graduated with a Computer Science degree from UBC Okanagan
+            and I've been building full-stack applications ever since. I work mostly with JavaScript, Python, and Java,
+            and I genuinely enjoy the whole process of turning an idea into something people can use.
+            Right now I'm contracting on two projects, a grant discovery platform and a visitor management system,
+            which keep me busy across the entire stack from database design to mobile apps.
+        </p>
+        <p>
+            Outside of code, I'm deep into cloud and infrastructure.
+            Feel free to reach out at <a href="mailto:chebowioallan@gmail.com">chebowioallan@gmail.com</a>.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="goals">
+        <details>
+            <summary><h2>Goals</h2></summary>
+
+            <h3>Long-Term</h3>
+            <p>
+                I love building things for the web. My goal is to become one of the best JavaScript/TypeScript
+                developers out there, someone who truly understands frontend technologies inside and out.
+                Not just using frameworks, but understanding how they work under the hood.
+                I want to write code that's fast, clean, and genuinely well-crafted.
+            </p>
+
+            <h3>Short-Term: Cloud &amp; Infrastructure</h3>
+            <p>Building a strong foundation in cloud and infrastructure through hands-on certifications and projects:</p>
+            <ol>
+                <li><strong>RHCSA</strong> (Red Hat Certified System Administrator), currently studying</li>
+                <li><strong>CKA</strong> (Certified Kubernetes Administrator), container orchestration and cluster management</li>
+                <li><strong>HashiCorp Terraform Associate</strong>, infrastructure as code and multi-cloud provisioning</li>
+            </ol>
+            <p>
+                Combined with the <a href="https://www.credly.com/badges/ac132774-b1f7-4566-8ac1-55214aabf3a4">AWS Solutions Architect Associate</a>
+                I already have, this path takes me from Linux fundamentals through container orchestration
+                to infrastructure automation.
+            </p>
+        </details>
+    </section>
+
+    <hr>
+
+    <section id="certifications">
+        <details>
+            <summary><h2>Certifications</h2></summary>
+
+            <h3>Earned</h3>
+            <ul>
+                <li><a href="https://www.credly.com/badges/ac132774-b1f7-4566-8ac1-55214aabf3a4">AWS Solutions Architect Associate</a></li>
+            </ul>
+
+            <h3>In Progress</h3>
+            <ul>
+                <li><strong>RHCSA</strong> (Red Hat Certified System Administrator), currently studying</li>
+            </ul>
+
+            <h3>Planned</h3>
+            <ul>
+                <li><strong>CKA</strong> (Certified Kubernetes Administrator)</li>
+                <li><strong>HashiCorp Terraform Associate</strong></li>
+            </ul>
+        </details>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+        <details>
+            <summary><h2>Experience</h2></summary>
+
+            <article>
+                <h3>Do Gooders <small>, Kelowna, BC</small></h3>
+                <p><strong>Software Engineer (Contract)</strong> | Feb 2026 – Present</p>
+                <p>PHP, WordPress, MySQL, JavaScript, Stripe API</p>
+                <ul>
+                    <li>Built a subscription-based grant discovery portal as a custom WordPress theme for Canadian nonprofits seeking funding</li>
+                    <li>Implemented AJAX-powered grant search and filtering by cause, province, deadline type, and date range with debounced queries</li>
+                    <li>Integrated Stripe Checkout, Billing Portal, and Webhooks for subscription lifecycle management with a tiered paywall</li>
+                    <li>Built custom frontend authentication on WordPress (signup, email verification, password reset) with role-based access control</li>
+                    <li>Designed a dual-database architecture, WordPress tables for users and help requests, separate MySQL database for 880+ grants</li>
+                    <li>Developed admin tools for subscriber management, help request tracking, activity audit logging, and announcement banners</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Unity Homes <small>, Remote</small></h3>
+                <p><strong>Software Engineer (Contract)</strong> | Nov 2025 – Present</p>
+                <p>FastAPI, PostgreSQL, Next.js, React, TypeScript, Java (Android), Docker, Railway</p>
+                <ul>
+                    <li>Building a visitor management system for residential communities with FastAPI + PostgreSQL backend, Next.js admin dashboard, and Android mobile app</li>
+                    <li>Implemented QR-based visitor check-in/check-out flow — residents pre-register guests, guards scan QR codes at the gate for verification</li>
+                    <li>Built guard workflows for walk-in and drive-in registration with optional ML Kit OCR for ID and license plate capture</li>
+                    <li>Developed a watchlist system with automatic matching on name, ID, or plate number that alerts guards during verification</li>
+                    <li>Implemented security features including account lockout policies, invite-token onboarding, audit logging, and rate limiting</li>
+                    <li>Built admin dashboard with section/unit management, incident reporting, visitor filtering, and analytics</li>
+                    <li>Deployed on Railway (API) with Docker Compose for local development</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Acronym Solutions <small>— Toronto, ON</small></h3>
+                <p><strong>Network Engineering Co-op</strong> | Sept 2023 – Sept 2024</p>
+                <ul>
+                    <li>Worked with UNIX/Linux CLI to validate network configurations and improve data accuracy across systems</li>
+                    <li>Produced technical documentation and updated Visio diagrams to support engineering projects and cross-team coordination</li>
+                    <li>Supported ServiceNow backlog cleanup, improving turnaround time for internal engineering requests</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>University of British Columbia <small>— Kelowna, BC</small></h3>
+                <p><strong>Teaching Assistant, COSC 121 &amp; DATA 101</strong> | Sept 2021 – April 2022</p>
+                <ul>
+                    <li>Assisted students with R and Java lab assignments, providing code reviews and debugging support using Eclipse and RStudio</li>
+                    <li>Explained technical concepts during lab sessions, enhancing student understanding</li>
+                    <li>Graded assignments and provided feedback to improve coding and data analysis skills</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>University of British Columbia <small>— Kelowna, BC</small></h3>
+                <p><strong>Orientation Leader</strong> | Aug 2021 – Sept 2021</p>
+                <ul>
+                    <li>Led orientation activities and facilitated group sessions to help new students integrate into campus life</li>
+                    <li>Introduced students to key university resources and support services, improving first-year onboarding</li>
+                    <li>Collaborated with fellow leaders to plan and deliver events for 100+ incoming students</li>
+                </ul>
+            </article>
+        </details>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+        <details>
+            <summary><h2>Projects</h2></summary>
+            <p><em>Coming soon.</em></p>
+        </details>
+    </section>
+
+    <hr>
+
+    <section id="media">
+        <details>
+            <summary><h2>Media</h2></summary>
+            <p>
+                Playlist documenting me learning JavaScript (not for education purposes, rather documenting the journey):
+                <a href="https://www.youtube.com/@allankipta/playlists">youtube.com/@allankipta/playlists</a>
+            </p>
+        </details>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>Contact: <a href="mailto:chebowioallan@gmail.com">chebowioallan@gmail.com</a></p>
+    </footer>
+</body>
+</html>
